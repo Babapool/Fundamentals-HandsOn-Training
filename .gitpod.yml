@@ -1,0 +1,12 @@
+tasks:
+  - name : minikube
+    env:
+      AWS_CLI_AUTO_PROMPT: on-partial
+    init: |
+       curl -LO "https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64"
+       sudo install minikube-linux-amd64 /usr/local/bin/minikube
+vscode:
+  extensions:
+    - 42Crunch.vscode-openapi
+    - ms-azuretools.vscode-docker
+    - cweijan.vscode-postgresql-client2
